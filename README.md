@@ -1,4 +1,4 @@
-# Coursevo - E-learning App Project
+# TodoVillage - A random mobile app project 
 
 A new Flutter project.
 
