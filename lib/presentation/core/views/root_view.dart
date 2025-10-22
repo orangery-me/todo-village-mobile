@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:e_learning_mobile/presentation/core/bloc/root_bloc.dart';
-import 'package:e_learning_mobile/presentation/core/widgets/app_bottom_navigation_bar.dart';
-import 'package:e_learning_mobile/presentation/core/widgets/slide_lazy_indexed_stack.dart';
-import 'package:e_learning_mobile/presentation/home/home.dart';
-import 'package:e_learning_mobile/presentation/notification/notification.dart';
-import 'package:e_learning_mobile/presentation/profile/profile.dart';
+import 'package:todo_village_mobile/presentation/core/bloc/root_bloc.dart';
+import 'package:todo_village_mobile/presentation/core/widgets/app_bottom_navigation_bar.dart';
+import 'package:todo_village_mobile/presentation/core/widgets/slide_lazy_indexed_stack.dart';
+import 'package:todo_village_mobile/presentation/home/view/home_view.dart';
+import 'package:todo_village_mobile/presentation/notification/view/notification_view.dart';
+import 'package:todo_village_mobile/presentation/profile/view/profile_view.dart';
+
 
 class RootPage extends StatelessWidget {
   const RootPage({super.key});
@@ -26,7 +27,7 @@ class _RootView extends StatelessWidget {
         builder: (context, state) {
           return SlideIndexedStack(
             index: state.currentIndex,
-            children:  [HomePage(), NotificationPage(), ProfilePage()],
+            children: [HomePage(), NotificationPage(), ProfilePage()],
           );
         },
         buildWhen: (previous, current) {

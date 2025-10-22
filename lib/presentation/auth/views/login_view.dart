@@ -1,17 +1,18 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:e_learning_mobile/common/extensions/context_extension.dart';
-import 'package:e_learning_mobile/common/extensions/string_extension.dart';
-import 'package:e_learning_mobile/common/theme/app_size.dart';
-import 'package:e_learning_mobile/common/utils/toast_util.dart';
-import 'package:e_learning_mobile/data/repositories/user_repository.dart';
-import 'package:e_learning_mobile/di/di.dart';
-import 'package:e_learning_mobile/generated/locale_keys.g.dart';
-import 'package:e_learning_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
-import 'package:e_learning_mobile/presentation/auth/bloc/login/login_bloc.dart';
-import 'package:e_learning_mobile/presentation/auth/widgets/login_form.dart';
-import 'package:e_learning_mobile/presentation/widgets/common_rounded_button.dart';
+import 'package:todo_village_mobile/common/extensions/context_extension.dart';
+import 'package:todo_village_mobile/common/extensions/string_extension.dart';
+import 'package:todo_village_mobile/common/theme/app_size.dart';
+import 'package:todo_village_mobile/common/utils/toast_util.dart';
+import 'package:todo_village_mobile/data/repositories/user_repository.dart';
+import 'package:todo_village_mobile/di/di.dart';
+import 'package:todo_village_mobile/generated/locale_keys.g.dart';
+import 'package:todo_village_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
+import 'package:todo_village_mobile/presentation/auth/bloc/login/login_bloc.dart';
+import 'package:todo_village_mobile/presentation/auth/widgets/login_form.dart';
+import 'package:todo_village_mobile/presentation/widgets/common_rounded_button.dart';
+
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -31,7 +32,7 @@ class LoginPage extends StatelessWidget {
   }
 
   void _listenLoginStateChanged(BuildContext context, LoginState state) {
-    if (state is LoginNotSuccess && state.error.isNullOrEmpty) {
+    if (state is LoginNotSuccess && state.error!.isNullOrEmpty) {
       ToastUtil.showError(context);
     }
   }

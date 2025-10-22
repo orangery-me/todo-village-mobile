@@ -1,14 +1,14 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:e_learning_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
+import 'package:todo_village_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
 
 part 'splash_event.dart';
 part 'splash_state.dart';
 
 class SplashBloc extends Bloc<SplashEvent, SplashState> {
   SplashBloc({required AuthBloc authBloc})
-    : _authBloc = authBloc,
-      super(const SplashState()) {
+      : _authBloc = authBloc,
+        super(const SplashState()) {
     on<SplashStarted>(_onSplashStarted);
     add(SplashStarted());
   }

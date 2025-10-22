@@ -1,4 +1,4 @@
-name: e_learning_mobile
+name: todo_village_mobile
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -54,7 +54,6 @@ dependencies:
   dropdown_button2: ^2.3.9
   simple_circular_progress_bar: ^1.0.2
   just_audio: ^0.9.43
-  file_picker: ^5.3.1
 
 dev_dependencies:
   flutter_test:
@@ -84,38 +83,38 @@ flavorizr:
   flavors:
     dev:
       app:
-        name: 'Coursevo E-Learning Platform DEV'
+        name: 'Todo Village Platform DEV'
         icon: 'assets/icons/launcher/app_icon.png'
       android:
-        applicationId: 'com.coursevo.dev'
+        applicationId: 'com.todo_village.dev'
         firebase:
           config: '.firebase/dev/google-services.json'
       ios:
-        bundleId: 'com.coursevo.dev'
+        bundleId: 'com.todo_village.dev'
         firebase:
           config: '.firebase/dev/GoogleService-Info.plist'
     staging:
       app:
-        name: 'Coursevo E-Learning Platform Staging'
+        name: 'Todo Village Platform Staging'
         icon: 'assets/icons/launcher/app_icon.png'
       android:
-        applicationId: 'com.coursevo.staging'
+        applicationId: 'com.todo_village.staging'
         firebase:
           config: '.firebase/staging/google-services.json'
       ios:
-        bundleId: 'com.coursevo.staging'
+        bundleId: 'com.todo_village.staging'
         firebase:
           config: '.firebase/staging/GoogleService-Info.plist'
     prod:
       app:
-        name: 'Coursevo E-Learning Platform'
+        name: 'Todo Village Platform'
         icon: 'assets/icons/launcher/app_icon.png'
       android:
-        applicationId: 'com.coursevo.prod'
+        applicationId: 'com.todo_village.prod'
         firebase:
           config: '.firebase/prod/google-services.json'
       ios:
-        bundleId: 'com.coursevo.prod'
+        bundleId: 'com.todo_village.prod'
         firebase:
           config: '.firebase/prod/GoogleService-Info.plist'
 

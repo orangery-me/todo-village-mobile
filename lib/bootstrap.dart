@@ -1,15 +1,14 @@
 import 'dart:async';
-
-import 'package:e_learning_mobile/app/app_bloc_observer.dart';
-import 'package:e_learning_mobile/common/helpers/firebase_messaging_service.dart';
-import 'package:e_learning_mobile/common/helpers/local_notification_service.dart';
-import 'package:e_learning_mobile/di/di.dart';
-import 'package:e_learning_mobile/flavors.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:todo_village_mobile/app/app_bloc_observer.dart';
+import 'package:todo_village_mobile/common/helpers/firebase_messaging_service.dart';
+import 'package:todo_village_mobile/common/helpers/local_notification_service.dart';
+import 'package:todo_village_mobile/di/di.dart';
+import 'package:todo_village_mobile/flavors.dart';
 
 typedef BootstrapBuilder = FutureOr<Widget> Function();
 

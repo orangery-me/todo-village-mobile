@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:e_learning_mobile/common/extensions/context_extension.dart';
-import 'package:e_learning_mobile/generated/assets.gen.dart';
-import 'package:e_learning_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
-import 'package:e_learning_mobile/presentation/splash/bloc/splash_bloc.dart';
-
+import 'package:todo_village_mobile/common/extensions/context_extension.dart';
+import 'package:todo_village_mobile/generated/assets.gen.dart';
+import 'package:todo_village_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
+import 'package:todo_village_mobile/presentation/splash/bloc/splash_bloc.dart';
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
 

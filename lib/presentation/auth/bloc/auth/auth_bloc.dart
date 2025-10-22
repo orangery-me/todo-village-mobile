@@ -1,15 +1,17 @@
+import 'dart:developer';
+
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:e_learning_mobile/data/models/user_model.dart';
-import 'package:e_learning_mobile/data/repositories/user_repository.dart';
+import 'package:todo_village_mobile/data/models/user_model.dart';
+import 'package:todo_village_mobile/data/repositories/user_repository.dart';
 
 part 'auth_event.dart';
 part 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc({required UserRepository userRepository})
-    : _userRepository = userRepository,
-      super(const AuthState.unknown()) {
+      : _userRepository = userRepository,
+        super(const AuthState.unknown()) {
     on<AuthUserInfoSet>(_onSetUserInfo);
     on<AuthUserInfoCheck>(_onCheckUserInfo);
   }
@@ -18,6 +20,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   void _onCheckUserInfo(AuthUserInfoCheck event, Emitter<AuthState> emit) {
     try {
       final user = _userRepository.getUserInfo();
+      log('user from local: ${user?.toJson()}');
 
       _changeAuthState(user, emit);
     } catch (err) {

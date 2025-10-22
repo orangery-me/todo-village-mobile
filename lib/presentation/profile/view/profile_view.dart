@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:e_learning_mobile/presentation/profile/bloc/profile_bloc.dart';
+import 'package:todo_village_mobile/presentation/profile/bloc/profile_bloc.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});

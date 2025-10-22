@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:e_learning_mobile/common/theme/palette.dart';
-import 'package:e_learning_mobile/common/theme/text_styles.dart';
-import 'package:e_learning_mobile/generated/fonts.gen.dart';
+import 'package:todo_village_mobile/common/theme/palette.dart';
+import 'package:todo_village_mobile/common/theme/text_styles.dart';
+import 'package:todo_village_mobile/generated/fonts.gen.dart';
 
 class ThemeSheet {
   final ThemeData themeData;

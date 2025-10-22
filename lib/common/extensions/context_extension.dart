@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:e_learning_mobile/common/theme/app_size.dart';
-import 'package:e_learning_mobile/common/theme/palette.dart';
-import 'package:e_learning_mobile/common/theme/text_styles.dart';
+import 'package:todo_village_mobile/common/theme/app_size.dart';
+import 'package:todo_village_mobile/common/theme/palette.dart';
+import 'package:todo_village_mobile/common/theme/text_styles.dart';
+
 
 extension ContextExtension on BuildContext {
   /// The same of [MediaQuery.of(context).size]

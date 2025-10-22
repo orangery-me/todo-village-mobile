@@ -1,7 +1,7 @@
-import 'package:e_learning_mobile/common/constants/hive_keys.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:injectable/injectable.dart';
+import 'package:todo_village_mobile/common/constants/hive_keys.dart';
 
 @module
 abstract class LocalModule {

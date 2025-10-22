@@ -1,9 +1,10 @@
-import 'package:e_learning_mobile/common/constants/endpoints.dart';
-import 'package:e_learning_mobile/common/helpers/dio_helper.dart';
-import 'package:e_learning_mobile/data/dtos/auth/login_by_email_request_dto.dart';
-import 'package:e_learning_mobile/data/dtos/auth/login_response_dto.dart';
-import 'package:e_learning_mobile/data/models/user_model.dart';
+
 import 'package:injectable/injectable.dart';
+import 'package:todo_village_mobile/common/constants/endpoints.dart';
+import 'package:todo_village_mobile/common/helpers/dio_helper.dart';
+import 'package:todo_village_mobile/data/dtos/auth/login_by_email_request_dto.dart';
+import 'package:todo_village_mobile/data/dtos/auth/login_response_dto.dart';
+import 'package:todo_village_mobile/data/models/user_model.dart';
 
 @lazySingleton
 class UserRemoteDataSource {
@@ -21,8 +22,8 @@ class UserRemoteDataSource {
 
     return LoginResponseDTO(
       // user: user,
-      refreshToken: response.data['data']['refresh_token'] as String,
-      accessToken: response.data['data']['access_token'] as String,
+      refreshToken: response.data['data']['refreshToken'] as String,
+      accessToken: response.data['data']['accessToken'] as String,
       expiresIn: response.data['data']['expires_in'] as int,
     );
   }

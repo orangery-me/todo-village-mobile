@@ -2,14 +2,15 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:e_learning_mobile/app/bloc/app_bloc.dart';
-import 'package:e_learning_mobile/common/constants/locales.dart';
-import 'package:e_learning_mobile/data/repositories/user_repository.dart';
-import 'package:e_learning_mobile/di/di.dart';
-import 'package:e_learning_mobile/flavors.dart';
-import 'package:e_learning_mobile/generated/codegen_loader.g.dart';
-import 'package:e_learning_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
-import 'package:e_learning_mobile/router/app_router.dart';
+import 'package:todo_village_mobile/app/bloc/app_bloc.dart';
+import 'package:todo_village_mobile/common/constants/locales.dart';
+import 'package:todo_village_mobile/data/repositories/user_repository.dart';
+import 'package:todo_village_mobile/di/di.dart';
+import 'package:todo_village_mobile/flavors.dart';
+import 'package:todo_village_mobile/generated/codegen_loader.g.dart';
+import 'package:todo_village_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
+import 'package:todo_village_mobile/router/app_router.dart';
+
 
 class App extends StatefulWidget {
   const App({super.key});

@@ -1,5 +1,6 @@
-import 'package:e_learning_mobile/common/constants/hive_keys.dart';
+
 import 'package:json_annotation/json_annotation.dart';
+import 'package:todo_village_mobile/common/constants/hive_keys.dart';
 
 part 'refresh_token_dto.g.dart';
 

@@ -1,8 +1,11 @@
-import 'package:e_learning_mobile/generated/firebase_options/firebase_options_prod.dart' as firebase_option_dev;
-import 'package:e_learning_mobile/generated/firebase_options/firebase_options_prod.dart' as firebase_options_staging;
-import 'package:e_learning_mobile/generated/firebase_options/firebase_options_prod.dart' as firebase_options_prod;
 import 'package:firebase_core/firebase_core.dart';
-import 'package:e_learning_mobile/common/constants/env_keys.dart';
+import 'package:todo_village_mobile/common/constants/env_keys.dart';
+import 'package:todo_village_mobile/generated/firebase_options/firebase_options_prod.dart'
+    as firebase_option_dev;
+import 'package:todo_village_mobile/generated/firebase_options/firebase_options_prod.dart'
+    as firebase_options_staging;
+import 'package:todo_village_mobile/generated/firebase_options/firebase_options_prod.dart'
+    as firebase_options_prod;
 
 enum Flavor {
   DEV,
@@ -31,8 +34,10 @@ class AppFlavor {
   static FirebaseOptions get firebaseOptions {
     return switch (appFlavor) {
       Flavor.DEV => firebase_option_dev.DefaultFirebaseOptions.currentPlatform,
-      Flavor.STAGING => firebase_options_staging.DefaultFirebaseOptions.currentPlatform,
-      Flavor.PROD => firebase_options_prod.DefaultFirebaseOptions.currentPlatform,
+      Flavor.STAGING =>
+        firebase_options_staging.DefaultFirebaseOptions.currentPlatform,
+      Flavor.PROD =>
+        firebase_options_prod.DefaultFirebaseOptions.currentPlatform,
       _ => firebase_option_dev.DefaultFirebaseOptions.currentPlatform,
     };
   }

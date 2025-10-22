@@ -1,4 +1,6 @@
-import 'package:e_learning_mobile/flavors.dart';
+
+
+import 'package:todo_village_mobile/flavors.dart';
 
 abstract class Endpoints {
   static String apiUrl = '${AppFlavor.apiBaseUrl}/api/v1';

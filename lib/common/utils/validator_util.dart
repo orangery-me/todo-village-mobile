@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:e_learning_mobile/common/extensions/string_extension.dart';
-import 'package:e_learning_mobile/generated/locale_keys.g.dart';
+import 'package:todo_village_mobile/common/extensions/string_extension.dart';
+import 'package:todo_village_mobile/generated/locale_keys.g.dart';
 
 abstract class ValidatorUtil {
   static String? validateEmail(String? value) {

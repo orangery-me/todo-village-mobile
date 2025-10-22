@@ -1,8 +1,8 @@
-import 'package:e_learning_mobile/presentation/auth/views/login_view.dart';
-import 'package:e_learning_mobile/presentation/core/views/root_view.dart';
-import 'package:e_learning_mobile/presentation/splash/view/splash_view.dart';
-import 'package:e_learning_mobile/presentation/pomodoro/views/pomodoro_view.dart';
+
 import 'package:flutter/material.dart';
+import 'package:todo_village_mobile/presentation/auth/views/login_view.dart';
+import 'package:todo_village_mobile/presentation/core/views/root_view.dart';
+import 'package:todo_village_mobile/presentation/splash/view/splash_view.dart';
 
 abstract final class AppRouter {
   static const String splash = '/';
@@ -13,7 +13,6 @@ abstract final class AppRouter {
 
   // Root
   static const String root = '/root';
-  static const String pomodoro = '/pomodoro';
 
   // static final router = GoRouter(
   //   routes: [
@@ -63,12 +62,6 @@ abstract final class AppRouter {
         return MaterialPageRoute(
           builder: (_) {
             return const RootPage();
-          },
-        );
-      case pomodoro:
-        return MaterialPageRoute(
-          builder: (_) {
-            return const PomodoroPage();
           },
         );
       default:

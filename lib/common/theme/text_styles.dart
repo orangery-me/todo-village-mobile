@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:e_learning_mobile/common/theme/palette.dart';
-import 'package:e_learning_mobile/generated/fonts.gen.dart';
+import 'package:todo_village_mobile/common/theme/palette.dart';
+import 'package:todo_village_mobile/generated/fonts.gen.dart';
 
 extension on TextStyle {
   TextStyle get w3 => copyWith(fontWeight: FontWeight.w300);

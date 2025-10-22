@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:e_learning_mobile/common/extensions/context_extension.dart';
-import 'package:e_learning_mobile/presentation/widgets/loading_dot.dart';
+import 'package:todo_village_mobile/common/extensions/context_extension.dart';
+import 'package:todo_village_mobile/presentation/widgets/loading_dot.dart';
 
 class CommonRoundedButton extends StatelessWidget {
   const CommonRoundedButton({

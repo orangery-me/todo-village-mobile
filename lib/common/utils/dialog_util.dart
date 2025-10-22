@@ -1,10 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:e_learning_mobile/common/extensions/context_extension.dart';
-import 'package:e_learning_mobile/generated/locale_keys.g.dart';
-import 'package:e_learning_mobile/presentation/widgets/common_rounded_button.dart';
-import 'package:e_learning_mobile/presentation/widgets/custom_popup_route.dart';
+import 'package:todo_village_mobile/common/extensions/context_extension.dart';
+import 'package:todo_village_mobile/generated/locale_keys.g.dart';
+import 'package:todo_village_mobile/presentation/widgets/common_rounded_button.dart';
+import 'package:todo_village_mobile/presentation/widgets/custom_popup_route.dart';
+
 
 abstract class DialogUtil {
   static bool _isDialogOpen = false;

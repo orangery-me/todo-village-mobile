@@ -2,9 +2,9 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:e_learning_mobile/common/constants/notifications/notification_channel_ids.dart';
-import 'package:e_learning_mobile/common/constants/notifications/notification_channel_names.dart';
-import 'package:e_learning_mobile/common/helpers/local_notification_service.dart';
+import 'package:todo_village_mobile/common/constants/notifications/notification_channel_ids.dart';
+import 'package:todo_village_mobile/common/constants/notifications/notification_channel_names.dart';
+import 'package:todo_village_mobile/common/helpers/local_notification_service.dart';
 
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {

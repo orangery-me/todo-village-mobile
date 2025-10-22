@@ -1,11 +1,12 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:e_learning_mobile/common/constants/hive_keys.dart';
-import 'package:e_learning_mobile/di/interceptors/app_interceptor.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:injectable/injectable.dart';
+import 'package:todo_village_mobile/common/constants/hive_keys.dart';
+import 'package:todo_village_mobile/di/interceptors/app_interceptor.dart';
 
 @lazySingleton
 class DioProvider {

@@ -4,10 +4,11 @@ import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:equatable/equatable.dart';
-import 'package:e_learning_mobile/data/dtos/auth/login_by_email_request_dto.dart';
-import 'package:e_learning_mobile/data/repositories/user_repository.dart';
-import 'package:e_learning_mobile/generated/locale_keys.g.dart';
-import 'package:e_learning_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
+import 'package:todo_village_mobile/data/dtos/auth/login_by_email_request_dto.dart';
+import 'package:todo_village_mobile/data/repositories/user_repository.dart';
+import 'package:todo_village_mobile/generated/locale_keys.g.dart';
+import 'package:todo_village_mobile/presentation/auth/bloc/auth/auth_bloc.dart';
+
 
 part 'login_event.dart';
 part 'login_state.dart';

@@ -1,7 +1,8 @@
-import 'package:e_learning_mobile/data/datasources/user/user_datasource.dart';
-import 'package:e_learning_mobile/data/dtos/auth/login_by_email_request_dto.dart';
-import 'package:e_learning_mobile/data/models/user_model.dart';
+
 import 'package:injectable/injectable.dart';
+import 'package:todo_village_mobile/data/datasources/user/user_datasource.dart';
+import 'package:todo_village_mobile/data/dtos/auth/login_by_email_request_dto.dart';
+import 'package:todo_village_mobile/data/models/user_model.dart';
 
 @lazySingleton
 class UserRepository {

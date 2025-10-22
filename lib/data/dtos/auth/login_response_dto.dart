@@ -1,5 +1,5 @@
-import 'package:e_learning_mobile/data/dtos/auth/refresh_token_dto.dart';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:todo_village_mobile/data/dtos/auth/refresh_token_dto.dart';
 
 part 'login_response_dto.g.dart';
 
